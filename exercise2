@@ -1,0 +1,21 @@
+def has_no_e(words):
+    for letter in words:
+        if letter == 'e':
+            return False
+        else:
+            return True
+
+
+amount_Of_es = 0
+amount_Of_no_es = 0
+fin = open('words.txt')
+for line in fin:
+    word = line.strip()
+    has_no_e(word)
+    if has_no_e(word):
+        amount_Of_no_es += 1
+        print(word)
+    else:
+        amount_Of_es += 1
+
+print("approximately " + str((amount_Of_es/amount_Of_no_es)*100) + "% of Words do not have an 'e'")
