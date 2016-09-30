@@ -1,0 +1,16 @@
+def has_three_double_letters(word):
+    i = 0
+    num = 0
+    while i < len(word)-1:
+        if word[i] == word[i+1]:
+            num += 1
+            i += 1
+        elif num == 3:
+            print(word)
+            i += 1
+        else:
+            i += 1
+
+for line in fin:
+    word = line.strip()
+    cool(word)
