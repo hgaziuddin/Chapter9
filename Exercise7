@@ -13,4 +13,4 @@ def has_three_double_letters(word):
 
 for line in fin:
     word = line.strip()
-    cool(word)
+    has_three_double_letters(word)
